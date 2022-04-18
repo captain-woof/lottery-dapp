@@ -1,10 +1,10 @@
 {
-  "name": "LotteryDAppV1",
-  "license": "UNLICENSED",
+  "name": "loterry-dapp-v1",
+  "license": "MIT",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ captain-woof/LotteryDAppV1",
+    "deploy": "graph deploy --product hosted-service \"captain-woof/Lottery-DApp-V1\"",
     "create-local": "graph create --node http://localhost:8020/ captain-woof/LotteryDAppV1",
     "remove-local": "graph remove --node http://localhost:8020/ captain-woof/LotteryDAppV1",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 captain-woof/LotteryDAppV1"
@@ -12,5 +12,9 @@
   "dependencies": {
     "@graphprotocol/graph-cli": "0.29.0",
     "@graphprotocol/graph-ts": "0.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "typescript": "^4.6.3"
   }
 }
